@@ -1,15 +1,14 @@
-# chasr-legal
+# chasr-legal (redirect)
 
-The public privacy policy and terms of service for **CHASR**, a nightlife
-discovery app for Ann Arbor and New York City.
+This page used to host the CHASR privacy policy and terms of service. The current
+text lives at **https://chasr.club/privacy** and **https://chasr.club/terms**, served
+from the `chasr-site` repo (`app/(marketing)/privacy` and `app/(marketing)/terms`).
 
-A single static `index.html`, deployed as the policy URL that the App Store and
-Google Play listings point at, and that the app links to from its settings
-screen. No build step and no dependencies — a legal page should still render in
-ten years, and the surest way to manage that is for it to be one file.
+`index.html` is now a redirect to `chasr.club/privacy`, kept so the old URL keeps
+working in older app builds and any listing that still points here. Do not put
+policy text back in this file; edit the site pages instead.
 
 The repo is named `bevvy-legal` for the same reason the app's bundle id and
 deep-link scheme still say `packd`: the product was renamed twice (Packd →
 Bevvy → CHASR) and the identifiers were deliberately frozen so existing
-sessions, deep links, and store listings keep working. Only display strings
-carry the current brand.
+sessions, deep links, and store listings keep working.
